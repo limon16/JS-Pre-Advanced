@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  height: 25px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+input {
+  width: 500px;
+  height: 35px;
+  border: none;
+  border-radius: 3px;
+  outline: 1px solid lightgray;
+  padding-left: 10px;
+  margin-bottom: 20px;
+
+}
+
+input:focus {
+  border: 2px solid rgb(112, 202, 238);
+  box-shadow: 1px 1px 2px 0 skyblue;
+  outline: none;
+}
+
+.btn {
+  border: 1px solid green;
+  background-color: white;
+  color: green;
+  height: 35px;
+  width: 90px;
+  border-radius: 3px;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.btn-none {
+  display: none;
+}
+
+
+table {
+  margin-top: 20px;
+  border-top: 2px solid lightgray;
+  height: 35px;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 10px;
+  border-bottom: 2px solid lightgray;
+}
+
+.edit,
+.delete {
+  height: 35px;
+  width: 80px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.edit {
+  background-color: orange;
+  color: black;
+}
+
+.delete {
+  background-color: rgb(194, 43, 43);
+  color: white;
+}
+
+.forum-after {
+  position: relative;
+}
+
+.forum-after::after {
+  content: "";
+  background-image: url("./img/times.svg");
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 90%;
+  right: 20px;
+  z-index: 1;
+}
+
+.forum-after-true {
+  position: relative;
+}
+
+.forum-after-true::after {
+  content: "";
+  background-image: url("./img/check.svg");
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 90%;
+  right: 20px;
+  z-index: 1;
+}
+
+.forum-before {
+  position: relative;
+}
+
+.forum-before::before {
+  content: var(--my-var);
+  background-color: rgb(207, 66, 66);
+  color: white;
+  width: 340px;
+  height: 32px;
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  border-radius: 3px;
+  font-size: 16px;
+
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  z-index: 1;
+}
