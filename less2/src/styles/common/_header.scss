@@ -1,0 +1,89 @@
+.header {
+	width: 100%;
+	height: 540px;
+	padding: 20px;
+	background-image: url('../images/header_small.webp');
+	background-position: center;
+	@include sm-screen {
+		height: 700px;
+		padding: 40px 50px;
+		background-image: url('../images/header_medium.webp');
+	}
+	@include md-screen {
+		padding-left: 248px;
+		padding-right: 248px;
+		background-image: url('../images/header_large.webp');
+	}
+}
+.top {
+	height: 155px;
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: space-between;
+	align-items: center;
+	@include sm-screen {
+		height: 36px;
+		flex-direction: row;
+	}
+	@include md-screen {
+		padding-right: 43px;
+	}
+	&__logo {
+		@include text-bold;
+		font-size: 20px;
+		text-transform: uppercase;
+	}
+	&__logining {
+		width: 153px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__login {
+		height: 36px;
+		border: none;
+		background-color: transparent;
+		color: $white;
+		line-height: 17px;
+		&_signup {
+		width: 90px;
+			border: 2px solid $white;
+			border-radius: 20px;
+		}
+	}
+}
+.about {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	&__h1 {
+		margin-top: 29px;
+		@include text-bold;
+		font-size: 30px;
+		line-height: 37px;
+		text-transform: uppercase;
+		@include sm-screen {
+			margin-top: 148px;
+			font-size: 52px;
+			line-height: 63px;
+		}
+	}
+	&__p {
+		margin-top: 5px;
+		@include text-simple;
+		font-size: 18px;
+		line-height: 24px;
+		color: $text_white2;
+		@include sm-screen {
+			margin-top: 28px;
+			font-size: 24px;
+			line-height: 24px;
+		}
+	}
+	&__find {
+		margin-top: 16px;
+		@include sm-screen {
+			margin-top: 34px;
+		}
+	}
+}

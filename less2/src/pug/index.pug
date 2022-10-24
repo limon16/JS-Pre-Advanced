@@ -1,0 +1,77 @@
+extend common/layout
+
+block content
+  main.main
+    section.section.section_step
+      h2.section__h2 How Dreamshare works?
+      .section_step__block
+        article.step.step_one
+          span.step__icon.button_small Step 1
+          h3.step__h3 Sed leo enim, condimentum
+          p.step__description
+            | Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.
+        article.step.step_two
+          span.step__icon.button_small Step 2
+          h3.step__h3 Morbi velit risus
+          p.step__description
+            | Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.
+        article.step.step_three
+          span.step__icon.button_small Step 3
+          h3.step__h3 Sed leo enim, condimentum
+          p.step__description
+            | Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.
+    section.section.section_partner
+      h2.section__h2 Meet a partner for your best holiday
+      .section_partner__block
+        article.user
+          a.user__link.user__link_music
+            img.user__photo(src='./images/photo_user1.webp', alt='photo of user 1')
+          h3.user__name Bradley Hunter
+          p.user__description Based in Chicago. I love playing tennis and loud music.
+        article.user
+          a.user__link.user__link_photo
+            img.user__photo(src='./images/photo_user2.webp', alt='photo of user 2')
+          h3.user__name Diana Wells
+          p.user__description
+            | Living in Athens, Greece. I love black and white classics, chillout music and green tea.
+        article.user
+          a.user__link.user__link_artist
+            img.user__photo(src='./images/photo_user3.webp', alt='photo of user 3')
+          h3.user__name Marie Bennett
+          p.user__description Currently living in Colorado. Lover of art, languages and travelling.
+        article.user
+          a.user__link.user__link_pilot
+            img.user__photo(src='./images/photo_user4.webp', alt='photo of user 4')
+          h3.user__name Christopher Pierce
+          p.user__description Star Wars fanatic. I have a persistent enthusiasm to create new things.
+      a.button.button_invert(href='#') See other partners
+    section.section.section_activities
+      h2.section__h2 Discover holiday activity ideas
+      .section_activities__block
+        .activity.activity_sport
+          h3.activity__name
+            a.activity__link(href='#') Sports and Activis
+        .activity.activity_health
+          h3.activity__name
+            a.activity__link(href='#') Wellness and Health
+        .activity.activity_extreme
+          h3.activity__name
+            a.activity__link(href='#') Extreme Sports and Expeditions
+        .activity.activity_games
+          h3.activity__name
+            a.activity__link(href='#') Games
+        .activity.activity_culture.activity_big
+          h3.activity__name
+            a.activity__link(href='#') Culture and Education
+        .activity.activity_relaxation.activity_big
+          h3.activity__name
+            a.activity__link(href='#') Enjomet and Relaxation
+        .activity.activity_travel
+          h3.activity__name
+            a.activity__link(href='#') Travelling
+    section.section.section_search.search
+      h2.section__h2 Crate your holiday activity
+      p.search__p Hi! What are your holiday interests?
+      form.search__form
+        input.search__input(type='text', placeholder='Enter your insterests')
+        button.search__button.button(type='submit') Search partners

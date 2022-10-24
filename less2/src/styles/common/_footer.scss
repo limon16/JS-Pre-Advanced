@@ -1,0 +1,75 @@
+.footer {
+	height: 226px;
+	padding: 20px 60px;
+	border-top: 2px solid $red;
+	@include sm-screen {
+		height: 244px;
+		padding: 40px 40px 20px;
+	}
+	&__block {
+		height: 186px;
+		margin: 0 auto;
+		max-width: 940px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		@include sm-screen {
+			height: 184px;
+			flex-direction: row;
+			align-items: stretch;
+		}
+	}
+	&__column {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		@include sm-screen {
+			align-items: start;
+		}
+	}
+	&__logo {
+		@include text-normal;
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: uppercase;
+		color: $red;
+	}
+	&__h3 {
+		@include text-bold;
+		font-size: 14px;
+		line-height: 17px;
+		color: $text_header;
+	}
+	&__links {
+		max-width: 260px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		@include sm-screen {
+			margin-top: 10px;
+			flex-direction: column;
+			flex-wrap: nowrap;
+		}
+	}
+	&__link {
+		@include text-light;
+		font-size: 14px;
+		line-height: 26px;
+		color: $text_link;
+	}
+	&__designer {
+		@include text-bold;
+		font-size: 10px;
+		line-height: 12px;
+		color: $text_designer;
+	}
+	&__img {
+		width: 110px;
+		height: 24px;
+		@include sm-screen {
+			margin-top: 5px;
+		}
+	}
+}
